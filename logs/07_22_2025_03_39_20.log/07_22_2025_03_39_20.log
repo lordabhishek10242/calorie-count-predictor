@@ -1,0 +1,22 @@
+[ 2025-07-22 03:43:20,337 ] 18 root - INFO - Entered the data ingestion method or component
+[ 2025-07-22 03:43:20,407 ] 23 root - INFO - Read the dataset as dataframe
+[ 2025-07-22 03:43:20,460 ] 26 root - INFO - Train test split initiated
+[ 2025-07-22 03:43:20,513 ] 30 root - INFO - Inmgestion of the data iss completed
+[ 2025-07-22 03:43:20,551 ] 54 root - INFO - Train and test data read successfully
+[ 2025-07-22 03:43:20,551 ] 38 root - INFO - Created preprocessing pipelines for numerical and categorical columns
+[ 2025-07-22 03:43:20,596 ] 69 root - INFO - Saved preprocessing object and returning arrays
+[ 2025-07-22 03:53:51,934 ] 20 root - INFO - Entered the data ingestion method or component
+[ 2025-07-22 03:53:51,960 ] 25 root - INFO - Read the dataset as dataframe
+[ 2025-07-22 03:53:52,009 ] 28 root - INFO - Train test split initiated
+[ 2025-07-22 03:53:52,064 ] 32 root - INFO - Inmgestion of the data iss completed
+[ 2025-07-22 03:53:52,127 ] 66 root - INFO - Train and test data read successfully
+[ 2025-07-22 03:53:52,128 ] 45 root - INFO - Created preprocessing pipelines for numerical and categorical columns
+[ 2025-07-22 03:53:52,152 ] 88 root - INFO - Saved preprocessing object and returning arrays
+[ 2025-07-22 04:14:31,467 ] 22 root - INFO - Entered the data ingestion method or component
+[ 2025-07-22 04:14:31,532 ] 27 root - INFO - Read the dataset as dataframe
+[ 2025-07-22 04:14:31,584 ] 30 root - INFO - Train test split initiated
+[ 2025-07-22 04:14:31,647 ] 34 root - INFO - Inmgestion of the data iss completed
+[ 2025-07-22 04:14:31,679 ] 66 root - INFO - Train and test data read successfully
+[ 2025-07-22 04:14:31,680 ] 45 root - INFO - Created preprocessing pipelines for numerical and categorical columns
+[ 2025-07-22 04:14:31,718 ] 88 root - INFO - Saved preprocessing object and returning arrays
+[ 2025-07-22 04:14:31,719 ] 33 root - INFO - Split training and test input data

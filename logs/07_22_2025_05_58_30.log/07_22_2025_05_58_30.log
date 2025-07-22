@@ -1,0 +1,3 @@
+[ 2025-07-22 05:58:32,001 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-07-22 05:58:32,003 ] 97 werkzeug - INFO -  * Debugger PIN: 128-592-892
+[ 2025-07-22 05:58:44,973 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Data science\\calorie count\\app.py', reloading

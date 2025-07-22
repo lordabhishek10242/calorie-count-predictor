@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorie Burn Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .banner-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+    .btn-primary {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container form-container">
+    <!-- 🔥 Fitness Banner Image -->
+    <img src="https://fitness.fr/wp-content/uploads/2025/05/Fitness.fr-_-le-gainage-768x271.png" alt="Fitness Banner" class="banner-img">
+
+    <h2 class="text-center mb-4">🔥 Calorie Burn Predictor</h2>
+
+    <form method="POST" action="/predictdata">
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <select class="form-select" name="Gender" required>
+          <option selected disabled value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" class="form-control" name="Age" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Height (cm)</label>
+        <input type="number" class="form-control" name="Height" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Weight (kg)</label>
+        <input type="number" class="form-control" name="Weight" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Duration (min)</label>
+        <input type="number" class="form-control" name="Duration" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Heart Rate</label>
+        <input type="number" class="form-control" name="Heart_Rate" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Body Temperature (°C)</label>
+        <input type="number" step="0.1" class="form-control" name="Body_Temp" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+
+    {% if results %}
+    <div class="alert alert-success mt-4" role="alert">
+      🔥 Predicted Calories Burned: <strong>{{ results }}</strong>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
