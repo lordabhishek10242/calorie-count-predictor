@@ -8,7 +8,7 @@ def set_bg_and_font():
     st.markdown("""
         <style>
         .stApp {
-            background-image: url("https://fitness.fr/");
+            background-image: url("");
             background-size: cover;
             background-attachment: fixed;
         }
