@@ -82,6 +82,7 @@ with st.form("predict_form"):
     heart_rate = st.number_input("Heart Rate", min_value=50, max_value=200, value=100)
     body_temp = st.number_input("Body Temp (°C)", min_value=30.0, max_value=45.0, value=37.0)
 
+    # ✅ BMI Calculation
     bmi = weight / ((height / 100) ** 2)
     st.markdown(f"**Your BMI:** `{bmi:.2f}`")
 
@@ -91,8 +92,10 @@ with st.form("predict_form"):
 # 🔮 Prediction Logic
 if submitted:
     gender_val = 1 if gender == "Male" else 0
+
+    # ✅ Pass all 8 features as required by model
     input_df = pd.DataFrame([[gender_val, age, height, weight, duration, heart_rate, body_temp, bmi]],
-                            columns=["Gender", "Age", "Height", "Weight", "Duration", "Heart_Rate", "Body_Temp", "BMI"])
+        columns=["Gender", "Age", "Height", "Weight", "Duration", "Heart_Rate", "Body_Temp", "BMI"])
 
     prediction = model.predict(input_df)[0]
     st.success(f"🔥 Estimated Calories Burned: **{prediction:.2f} kcal**")
